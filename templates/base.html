@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>robertlee</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width-device-width", initial-scale="1">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+            <style type="text/css">
+               body {
+               }
+               a { padding: 25px }
+            </style>
+    </head>
+        <nav class="navbar navbar-static-top navbar-inverse bg-inverse">
+            <a class="navbar-brand" href="{{ url_for('index') }}">Home</a>
+            <a class="navbar-brand" href="{{ url_for('experience') }}">Experience</a>
+        </nav>
+        {% block body %}
+        {% endblock %}
+
+            <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+</html>
