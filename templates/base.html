@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -9,78 +9,59 @@
     <meta name="author" content="">
 
     <title>robert lee</title>
-    <style type="text/css">
-
-    </style>
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
-
-    <!-- Custom styles for this template -->
-    <!--<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/full-width-pics.css') }}">-->
-  </head>
-
-  <body>
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="#">Robert Lee</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="navbar-brand" href="{{ url_for('index') }}">Home</a>
-                <span class="sr-only">(current)</span>
-              </a>
-            </li>
-            <li class="nav-item active">
-              <a class="navbar-brand" href="{{ url_for('experience') }}">Experience</a>
-                <span class="sr-only">(current)</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-     <!--Header - set the background image for the header in the line below-->
-    <header class="py-5 bg-image-full" style="background-image: url('../static/img/background.jpg');">
-    <!--<header class="py-5 bg-image-full" style="background-image: url('https://unsplash.com/photos/o4ktwpTEQso');">-->
-      <img class="img-fluid d-block mx-auto" src="{{ url_for('static', filename='img/me.jpg') }}" alt="">
-    </header>
-
-
-     <!--Header - set the background image for the header in the line below-->
-    <!--<header class="py-5 bg-image-full" style="background-image: url('https://unsplash.it/1900/1080?image=1076');">-->
-      <!--<img class="img-fluid d-block mx-auto" src="http://placehold.it/200x200&text=Logo" alt="">-->
-    <!--</header>-->
-
-     <!--Content section-->
-    <section class="py-5">
-      <div class="container">
-          <center>
-        <h1>About</h1>
-        <p class="lead">Data Engineer based in Seattle currently employed at Avvo.</p>
-        <p>Passion for technology and continuous improvement</p>
-              </center>
-      </div>
-    </section>
-
-     <!--Footer-->
-    <footer class="py-5 bg-inverse">
-      <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2017</p>
-      </div>
-      <!-- /.container -->
-    </footer>
+    <!-- CSS -->
+    <!--<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">-->
+    <!--<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css')}}">-->
 
     <!-- Bootstrap core JavaScript -->
-    <!--<script src="vendor/jquery/jquery.min.js"></script>-->
-    <!--<script src="vendor/popper/popper.min.js"></script>-->
-<script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+    <!--<script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>-->
+    <style>
+    html {
+  background: url('../static/img/background.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+a { padding: 25px;
+}
+    </style>
 
-  </body>
+</head>
+
+<!--<body style="background-image: url('../static/img/background.jpg')>-->
+<body background="../static/img/background.jpg">
+
+<!--navbar-->
+<nav class="navbar navbar-static-top navbar-inverse bg-inverse">
+    <a class="navbar-brand" href="{{ url_for('index') }}">Home</a>
+    <a class="navbar-brand" href="{{ url_for('experience') }}">Experience</a>
+    <a class="navbar-brand" href="{{ url_for('resume') }}">Resume</a>
+</nav>
+
+<!--<img style="background-image: url({{ url_for('static', filename='img/background.jpg') }})">-->
+<!--<img style="background-image: url('../static/img/background.jpg')">-->
+
+
+<!--&lt;!&ndash;Content section&ndash;&gt;-->
+<!--<section class="py-5">-->
+<div class="container">
+    <center>
+        <h1>About</h1>
+        <p class="lead">Data Engineer based in Seattle currently employed at Avvo.</p>
+        <p>Passion for technology and continuous improvement.</p>
+    </center>
+</div>
+<!--</section>-->
+
+<!--&lt;!&ndash;Footer&ndash;&gt;-->
+<!--<footer class="py-5 bg-inverse">-->
+<!--<div class="container">-->
+<!--<p class="m-0 text-center text-white">Copyright &copy; Your Website 2017</p>-->
+<!--</div>-->
+<!--&lt;!&ndash; /.container &ndash;&gt;-->
+<!--</footer>-->
+
+</body>
 
 </html>

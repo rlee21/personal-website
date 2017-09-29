@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!venv/bin/python3.6
 
 import os
 from flask import Flask, render_template
