@@ -1,21 +1,32 @@
-{% extends 'base.html' %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="../static/css/main.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
 
 
+<body>
+<div class="prof-box">
+    <img src="../static/img/me.jpg" class="prof-pic">
+    <h1>Robert Lee</h1>
+    <h4>Data Engineer</h4>
+    <h5>Seattle, WA</h5>
+    <div class="line-break"></div>
+    <p>
+        Data Engineer based in Seattle currently employed at Avvo.<br>
+        Passion for technology and continuous learning
 
-{% block body %}
+    </p>
+    <div class="social-icons">
+        <a href="https://www.linkedin.com/in/robert-lee-972a316b/" target="_blank"> <i class="fa fa-linkedin"
+                                                                                       aria-hidden="true"></i></a>
+        <a href="https://github.com/rlee21" target="_blank"> <i class="fa fa-github" aria-hidden="true"></i></a>
+    </div>
+</div>
+</body>
 
 
-<center>
-    <h3>About</h3>
-        <body>
-        <div class="container-fluid">
-            <p>
-                Data Engineer based in Seattle currently employed at Avvo. <br>
-                Passion for technology and continuous improvement.
-
-            </p>
-
-        </div>
-        </body>
-</center>
-{% endblock %}
+</html>
