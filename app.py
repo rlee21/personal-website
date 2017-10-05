@@ -1,7 +1,7 @@
 #!venv/bin/python3.6
 
 import os
-from flask import Flask, render_template
+from flask import Flask, render_template, send_file
 
 
 app = Flask(__name__)
@@ -12,16 +12,10 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
-
-@app.route('/experience')
-def experience():
-    return render_template('experience.html')
-
-
-@app.route('/resume')
+@app.route('/resume.pdf')
 def resume():
-    return render_template('resume.html')
-
+    file_path = './static/doc/resume.pdf'
+    return send_file(file_path, attachment_filename='resume.pdf')
 
 if __name__ == '__main__':
     app.debug = True
