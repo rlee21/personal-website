@@ -15,12 +15,12 @@ def index():
 
 @app.route('/resume.pdf')
 def resume():
-    file_path = './static/doc/resume.pdf'
+    file_path = 'static/doc/resume.pdf'
     return send_file(file_path, attachment_filename='resume.pdf')
 
 
 if __name__ == '__main__':
-    app.debug = True
+    app.debug = False
     host = os.environ.get('IP', '0.0.0.0')
     port = int(os.environ.get('PORT', 8080))
     app.run(host=host, port=port)
