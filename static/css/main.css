@@ -1,14 +1,18 @@
-html {
+body {
   background: url(../img/background.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  font-family: 'Helvetica Neue', sans-serif
+  font-family: helvetica, sans-serif, verdana, arial;
 }
-.prof-box {
-    width: 400px;
-    height: 475px;
+p {
+    font-weight: 300;
+    font-size: 80%;
+    letter-spacing: 1;
+}
+.profile-box {
+    width: 25%;
     background: rgba(0,0,0,0.4);
     padding: 40px;
     color: white;
@@ -16,29 +20,24 @@ html {
     margin-top: 80px;
     text-align: center;
 }
-.prof-pic {
+.profile-img {
     border-radius: 50%;
-    height: 200px;
-    width: 200px;
-}
-p {
-    font-weight: 300;
-    font-size: 15px;
-    letter-spacing: 1;
+    height: 50%;
+    width: 50%;
 }
 .social-icons {
-    font-size: 40px;
+    font-size: 200%;
 }
 .social-icons a {
     color: white;
 }
 .line-break {
-    width: 400px;
+    width: 100%;
     margin: 0 auto;
     border-top: 1px solid white;
 }
 input.button-resume {
-    width: 125px;
+    width: 50%;
     padding: 10px;
     cursor: pointer;
     font-weight: bold;
