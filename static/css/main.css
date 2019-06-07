@@ -26,7 +26,7 @@ p {
     width: 50%;
 }
 .social-icons {
-    font-size: 200%;
+    font-size: 150%;
 }
 .social-icons a {
     color: white;
@@ -37,7 +37,8 @@ p {
     border-top: 1px solid white;
 }
 input.button-resume {
-    width: 50%;
+    width: 100%;
+    margin-top: 10px;
     padding: 10px;
     cursor: pointer;
     font-weight: bold;
