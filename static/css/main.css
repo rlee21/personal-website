@@ -36,7 +36,7 @@ p {
     margin: 0 auto;
     border-top: 1px solid white;
 }
-input.button-resume {
+.button-resume {
     width: 100%;
     margin-top: 10px;
     padding: 10px;
@@ -45,6 +45,7 @@ input.button-resume {
     color: 000000;
     font-size: 50%;
     text-align: center;
+    font-size: 80%;
     background: #F8F9F9;
     border: 1px solid #F8F9F9;
     border-radius: 10px;

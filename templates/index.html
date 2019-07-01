@@ -4,14 +4,16 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141330598-1"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
+      function gtag() {
+        dataLayer.push(arguments);
+      }
       gtag('js', new Date());
       gtag('config', 'UA-141330598-1');
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Robert Lee</title>
-    <link rel="stylesheet" type="text/css" href="../static/css/main.css">
+    <link rel="stylesheet" href="../static/css/main.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   </head>
   <body>
@@ -28,9 +30,7 @@
         <a href="https://www.linkedin.com/in/robert-lee-972a316b" title="LinkedIn" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
         <a href="https://github.com/rlee21" title="GitHub" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
         <a href="mailto:rob206lee@gmail.com" title="Email"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
-        <form>
-          <input class="button-resume" type="button" value="Resume" onclick="window.location.href='./resume.pdf'">
-        </form>
+      <button class="button-resume" type="button" onclick="window.location.href='./resume.pdf'">Resume</button>
       </div>
     </div>
   </body>
