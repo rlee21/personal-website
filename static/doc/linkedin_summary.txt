@@ -1,2 +1,0 @@
-Over 10 years of experience in data management; well-versed in development, design, support and analysis of data pipelines and reporting systems.  Technical expertise in ETL, SQL, Python, Linux, Big Data, Hadoop, HDFS, Hive, Impala, Sqoop, HBase, Spark, Kafka, Flume, Oozie, Data Warehousing, Git, Shell scripting, Star Schemas, SDLC, AWS, Glue, Lambda, EMR, S3, EC2, Real-Time, Informatica, Tableau, MySQL, Oracle, PL/SQL, Oracle Data Integrator, OBIEE, IBI Data Migrator and IBI WebFOCUS.
-
